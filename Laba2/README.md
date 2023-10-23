@@ -1,18 +1,31 @@
-## Getting Started
+# Лабораторна робота №2
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Опис завдання
 
-## Folder Structure
+Цей код:
 
-The workspace contains two folders by default, where:
+1. Визначає `C5` як остачу від ділення номера залікової книжки студента на 5.
+2. Визначає `C7` як остачу від ділення номера залікової книжки студента на 7.
+3. Визначає `C11` як остачу від ділення номера залікової книжки студента на 11.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+4. В залежності від `C5`, виконує дію з матрицею(ями) згідно наступного:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+   - Якщо `C5` = 0, то виконує дію CaBaconst = C - a * b.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+   - Якщо `C5` = 1, то обчислює транспоновану матрицю TCB.
 
-## Dependency Management
+   - Якщо `C5` = 2, то обчислює CAB = C + a * b.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+   - Якщо `C5` = 3, то обчислює CAB = C XOR (побітове виключення).
+
+   - Якщо `C5` = 4, то обчислює CAB = C * a * b.
+
+5. В залежності від `C7`, визначає тип елементів матриці (double, byte, short, int, long, char, float).
+
+6. В залежності від `C11`, виконує дію з матрицею С, включаючи обчислення суми найменших та найбільших елементів у різних комбінаціях рядків і стовпців матриці.
+
+7. Створює клас, який містить виконавчий метод для виконання дій з матрицею(ями), враховуючи типи елементів і дії (п.4 та п.5), і виводить результати на екран.
+
+8. Обробляє всі можливі виключні ситуації, які можуть виникнути під час виконання програмного коду.
+
+9. Усі змінні описані та задані значення виконавчому методі.
